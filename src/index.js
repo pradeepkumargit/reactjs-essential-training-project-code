@@ -1,6 +1,7 @@
 import React from 'react';
 import { render} from 'react-dom';
 import Library from './Library';
+import Clock from './Clock';
 
 let bookList = [
   {"title":"Book 1","author":"Author 1","pages": 260},
@@ -10,7 +11,10 @@ let bookList = [
 ]
 
 render(
-  <Library books={bookList}/>,
-  //<FavouriteColorForm/>,
+  <div>
+    <Library books={bookList}/>,  
+    
+    <Clock/>,
+  </div>,
   document.getElementById('root')
 );
